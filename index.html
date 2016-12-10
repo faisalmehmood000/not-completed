@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <center>
+        <div id="circle">
+
+
+        </div>
+        <div id="buttons">
+            <button class="blok" onclick="top()"> top</button>
+            <button onclick="left()">left</button>
+            <button onclick="right()">right </button>
+            <button class="blok" onclick="bottom()">bottom</button>
+        </div>
+    </center>
+
+    <script>
+        var ball = document.getElementById("circle");
+
+        var upCount = 0;
+        var rightCount = 0;
+
+
+        function right() {
+            rightCount += 10;
+            ball.style.left = rightCount + "px";
+
+        }
+
+
+        function left() {
+            rightCount -= 10;
+            ball.style.left = rightCount + "px";
+
+        }
+
+        function bottom() {
+            upCount -= 10;
+            ball.style.bottom = upCount + "px"
+
+        }
+
+        function top() {
+            upCount += 10;
+            ball.style.bottom = upCount + "px"
+        }
+    </script>
+
+</body>
+
+
+</html>

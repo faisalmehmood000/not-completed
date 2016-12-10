@@ -1,0 +1,21 @@
+body {
+    background-color: greenyellow;
+}
+
+#circle {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+}
+
+.blok {
+    display: block;
+}
+
+#buttons {
+    margin-top: 60px;
+    padding: 20px
+}
